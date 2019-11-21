@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'page_login.dart';
+import 'main_navigation.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home: PageLogin(),
+      home: MainNavigation(),
     );
   }
 }

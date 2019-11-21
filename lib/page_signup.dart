@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class PageLogin extends StatefulWidget {
+class PageSignup extends StatefulWidget {
   @override
-  _PageLoginState createState() => _PageLoginState();
+  _PageSignupState createState() => _PageSignupState();
 }
 
 Widget topArea(BuildContext context) {
@@ -36,10 +36,11 @@ Widget midArea(BuildContext context) {
             border: OutlineInputBorder(borderRadius: roundedBorder(4))),
       ),
       SizedBox(height: 10),
-      FlatButton(
-        child: Text("Forgot password!!!"),
-        onPressed: () {},
-      )
+      TextField(
+        decoration: InputDecoration(
+            labelText: "Confirm Password",
+            border: OutlineInputBorder(borderRadius: roundedBorder(4))),
+      ),
     ]),
   );
 }
@@ -58,7 +59,7 @@ Widget bottomArea(BuildContext context) {
               color: Theme.of(context).primaryColor,
               shape: RoundedRectangleBorder(borderRadius: roundedBorder(8)),
               child: Text(
-                "Sign In",
+                "Sign Up",
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -73,7 +74,7 @@ Widget bottomArea(BuildContext context) {
   );
 }
 
-class _PageLoginState extends State<PageLogin> {
+class _PageSignupState extends State<PageSignup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
